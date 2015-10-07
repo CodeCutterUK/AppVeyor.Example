@@ -1,0 +1,19 @@
+version: 1.0.{build}
+pull_requests:
+  do_not_increment_build_number: true
+configuration: Release
+platform:
+- x86
+- x64
+- ARM
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+build:
+  project: /src/CodeCutterUK.AppVeyor.Example
+  parallel: true
+  verbosity: minimal
+deploy: off
