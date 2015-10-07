@@ -13,8 +13,10 @@ assembly_info:
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
+before_build:
+- cmd: pushd . && cd src && nuget restore && popd
 build:
-  project: /src/CodeCutterUK.AppVeyor.Example
+  project: src\CodeCutterUK.AppVeyor.Example.sln
   parallel: true
   verbosity: minimal
 deploy: off
