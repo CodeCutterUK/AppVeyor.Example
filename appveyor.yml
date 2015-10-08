@@ -1,6 +1,7 @@
 version: 1.0.{build}
 pull_requests:
   do_not_increment_build_number: true
+os: Visual Studio 2015
 configuration: Release
 platform:
 - x86
@@ -12,8 +13,10 @@ assembly_info:
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
+before_build:
+- cmd: pushd . && cd src && nuget restore && popd
 build:
-  project: /src/CodeCutterUK.AppVeyor.Example
+  project: src\CodeCutterUK.AppVeyor.Example.sln
   parallel: true
   verbosity: minimal
 deploy: off
