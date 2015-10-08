@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="a19cc849-0819-427f-8e60-d9b253e41c3f"
+    Name="23087f88-c16f-4bb0-b548-bf672b5669b2"
     Publisher="CN=MIS42"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="a19cc849-0819-427f-8e60-d9b253e41c3f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="23087f88-c16f-4bb0-b548-bf672b5669b2" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>CodeCutterUK.AppVeyor.Example</DisplayName>
+    <DisplayName>CodeCutterUK.AppVeyor.Example.Uwp</DisplayName>
     <PublisherDisplayName>MIS42</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="CodeCutterUK.AppVeyor.Example.App">
+      EntryPoint="CodeCutterUK.AppVeyor.Example.Uwp.App">
       <uap:VisualElements
-        DisplayName="CodeCutterUK.AppVeyor.Example"
+        DisplayName="CodeCutterUK.AppVeyor.Example.Uwp"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="CodeCutterUK.AppVeyor.Example"
+        Description="CodeCutterUK.AppVeyor.Example.Uwp"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
