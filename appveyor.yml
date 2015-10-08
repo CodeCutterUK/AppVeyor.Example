@@ -13,11 +13,6 @@ assembly_info:
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
-environment:
-  NuGetCachePath: '%APPVEYOR_BUILD_FOLDER%\_NuGetCache'
-cache:
-  _NuGetCache -> src\**\project.json
-  src\packages -> src\**\packages.config
 before_build:
 - cmd: pushd . && cd src && nuget restore && popd
 build:
