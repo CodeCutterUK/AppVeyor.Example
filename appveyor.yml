@@ -14,7 +14,7 @@ assembly_info:
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
 cache:
-  \Users\appveyor\.nuget\packages -> src\**\project.json
+  ..\..\Users\appveyor\.nuget\packages -> src\**\project.json
   src\packages -> src\**\packages.config
 before_build:
 - cmd: pushd . && cd src && nuget restore && popd
