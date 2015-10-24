@@ -22,7 +22,7 @@ xamarin:
   android: true
   ios: true
 before_build:
-- cmd: pushd . && cd src && nuget restore && popd
+- cmd: nuget restore src\CodeCutterUK.AppVeyor.Example.sln
 build:
   project: src\CodeCutterUK.AppVeyor.Example.sln
   parallel: true
