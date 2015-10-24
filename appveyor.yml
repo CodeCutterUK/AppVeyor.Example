@@ -22,7 +22,14 @@ xamarin:
   android: true
   ios: true
 before_build:
-- cmd: nuget restore src\CodeCutterUK.AppVeyor.Example.sln
+- cmd: >-
+    IF "%PLATFORM%"=="x64" set NUGET_RESTORE=1
+
+    IF "%PLATFORM%"=="x86" set NUGET_RESTORE=1
+
+    IF "%PLATFORM%"=="ARM" set NUGET_RESTORE=1
+
+    IF "%NUGET_RESTORE%"=="1" nuget restore src\CodeCutterUK.AppVeyor.Example.sln
 build:
   project: src\CodeCutterUK.AppVeyor.Example.sln
   parallel: true
