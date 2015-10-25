@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace CodeCutterUK.AppVeyor.Example
+namespace CodeCutterUK.AppVeyor.Example.Uwp
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
